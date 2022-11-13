@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharMato</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-family: sono;
+        }
+        body {
+            background-color: #F7F7F7;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        .header-main {
+            padding: 2rem;
+            width: 100%;
+            color: #393E46;
+            background-color: #F2E7D5;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .main-2 {
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+            justify-content: space-around;
+        }
+
+        .map-main {
+            padding: 3px;
+            margin-right: 5px;
+            border: 10px bold ;
+            margin: 8px;
+            align-self: stretch;
+            width: 50%;
+            background-color: #5a8070;
+        }
+
+        .pharm-detail {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .details {
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+        .details p {
+            padding: 5px;
+            ;
+        }
+
+        .choose {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .choose div {
+            margin: 3px;
+            display: flex;
+            justify-content: space-between;
+            /* width: 100%; */
+        }
+        select{
+            width: 138.92px;
+        }
+        .addmore{
+            margin:5px;
+            background-color: #5fb893;
+            border-radius: 10px;
+            height: 48px;
+        }
+        .place-order{
+            margin:5px;
+            background-color: #d6ff5b;
+            border-radius: 10px;
+            height: 48px;
+        }
+        .addmore:active
+        {
+            background-color: #53a080;
+        }
+        .place-order:active
+        {
+            background-color: #b1d349;
+
+        }
+        select{
+            border:1px;
+            height: 27px;
+        }
+        .qwe,label
+        {
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="order-main">
+        <div class="header-main">
+            <h1>Order Window</h1>
+        </div>
+        <div class="main-2">
+            <div class="map-main">
+                <!-- enter your enbedd here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4219.444034442995!2d77.50282597536533!3d28.762853726891166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spharmacy%20near%20me!5e0!3m2!1sen!2sin!4v1668200478174!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="pharm-detail">
+                <div class="detail-header">
+                    <h1 id="dist-name">Pharmacy Name</h1>
+                </div>
+                <div class="details">
+                    <div class="qwe">
+                        <p>Adress</p>
+                        <p>Timing</p>
+                        <p>Distance</p>
+                        <p>Number Lines</p>
+                    </div>
+                    <div class="qwe2">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="qwe2">
+                        <p id="pharm-adress">Lorem, ipsum.</p>
+                        <p id="pharm-timing">Lorem, ipsum.</p>
+                        <p id="pharm-Distance">Lorem, ipsum.</p>
+                        <p id="pharm-mobile">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <h1>Order</h1>
+                <div class="choose">
+                    <div>
+                        <label for="med-category">Category</label>
+                        <p>:</p>
+                        <select name="category" id="med-category" class="inp">
+                            <option value="1">asdfg</option>
+                            <option value="2">sdfg</option>
+                            <option value="3">asdfg</option>
+                            <option value="4">sdrfgh</option>
+                            <option value="5">asdfghj</option>
+                            <option value="6">zxdfghj</option>
+                            <option value="7">23e4rty</option>
+                            <option value="8">asdfghj</option>
+                            <option value="9">drfvcgh</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="med-Name">Medicine</label>
+                        <p>:</p>
+                        <select name="Medicine" id="med-name" class="inp">
+                            <option value="1">asdfg</option>
+                            <option value="2">sdfg</option>
+                            <option value="3">asdfg</option>
+                            <option value="4">sdrfgh</option>
+                            <option value="5">asdfghj</option>
+                            <option value="6">zxdfghj</option>
+                            <option value="7">23e4rty</option>
+                            <option value="8">asdfghj</option>
+                            <option value="9">drfvcgh</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="qty">Quantity</label>
+                        <p>:</p>
+                            <div>
+                            <input type="range" name="qty" max="20" min="1" value="1"
+                                oninput="this.nextElementSibling.value = this.value" class="rr">
+                            <output>1</output>
+                            </div>
+                    </div>
+                    <div>
+                        <label for="payment">Payment&nbsp;</label>
+                        <p>:</p>
+                        <select name="" id="med-Payment" class="Payment inp">
+                            <option value="1">Cash On Delivery</option>
+                            <option value="2">Pay Online</option>
+                        </select>
+                    </div>
+                    <button class="addmore">Add More +</button>
+                    <button class="place-order inp">Buy Now</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

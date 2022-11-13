@@ -5,8 +5,6 @@
   <link rel="stylesheet" href="style.css" />
   <title>MedManager</title>
 </head>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 <script src="login.js"></script>
 <body>
   <div class="login-wrap">
@@ -28,7 +26,7 @@
             <label for="check"><span class="icon"></span> Keep me Signed in</label>
           </div>
           <div class="group">
-            <input type="submit" class="button" value="Sign In">
+            <input type="submit" class="button" value="Sign In" onclick="validate()">
           </div>
           <div class="hr"></div>
           <div class="foot-lnk">
